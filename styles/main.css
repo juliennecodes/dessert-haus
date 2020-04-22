@@ -14,19 +14,74 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 /*--------------------------------------------------------------
 Base Styles
 --------------------------------------------------------------*/
 .main img {
-  width: 300px;
+  width: 100%;
 }
+
+.site {
+  background-color: hsl(300, 10%, 10%);
+}
+
+/* Typography */
+li, a, p {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Monsieur La Doulaise', serif;
+  font-size: 60px;
+}
+
+.footer p {
+  font-size: 10px;
+}
+
+/* Spacing */
+.header, .main, .footer {
+  margin: 12px 24px;
+}
+
+.header h1 {
+  padding: 12px;
+}
+
+.images img {
+  margin-bottom: 12px;
+}
+
+.sm-icons {
+  padding: 8px 0;
+}
+
+.sm-icons img {
+  padding: 0 4px;
+}
+
+/* Colour */
+h1, li, a, p {
+  color: hsl(300, 0%, 85%);
+  max-width: 35em;
+}
+
 /*--------------------------------------------------------------
 Component Styles
 --------------------------------------------------------------*/
+.sm-icons img {
+  width: 20px;
+}
 
 /*--------------------------------------------------------------
 Layout Styles
 --------------------------------------------------------------*/
+.header h1 {
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 Grid Styles
