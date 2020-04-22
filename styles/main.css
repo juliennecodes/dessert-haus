@@ -44,7 +44,7 @@ h1 {
 
 /* Spacing */
 .header, .main, .footer {
-  margin: 12px 24px;
+  padding: 0 24px;
 }
 
 .header h1 {
@@ -56,7 +56,7 @@ h1 {
 }
 
 .sm-icons {
-  padding: 8px 0;
+  padding: 8px 0 4px;
 }
 
 .sm-icons img {
@@ -66,7 +66,6 @@ h1 {
 /* Colour */
 h1, li, a, p {
   color: hsl(300, 0%, 85%);
-  max-width: 35em;
 }
 
 /*--------------------------------------------------------------
@@ -79,6 +78,10 @@ Component Styles
 /*--------------------------------------------------------------
 Layout Styles
 --------------------------------------------------------------*/
+.header, .main, .footer {
+  margin: 12px auto;
+  max-width: 600px;
+}
 .header h1 {
   text-align: center;
 }
