@@ -16,22 +16,22 @@ image[0].classList.add("active");
 //I'll start with specific scenarios first.
 
 // Scenario 1
-image[0].classList.toggle("active");
-image[1].classList.toggle("active");
+// image[0].classList.toggle("active");
+// image[1].classList.toggle("active");
 
 // Scenario 2
-image[1].classList.toggle("active");
-image[2].classList.toggle("active");
+// image[1].classList.toggle("active");
+// image[2].classList.toggle("active");
 
 //So the specifics in these scenarios are the index numbers
 //It can be generalized to n and n+1, since they are just one apart
 //the constants are image, classList, and toggle active
 
 //This is the general version of the above code.
-function changeDisplay(indexNumberOfCurrent){
-  image[indexNumberOfCurrent].classList.toggle("active");
-  image[indexNumberOfCurrent + 1].classList.toggle("active");
-}
+// function changeDisplay(indexNumberOfCurrent){
+//   image[indexNumberOfCurrent].classList.toggle("active");
+//   image[indexNumberOfCurrent + 1].classList.toggle("active");
+// }
 
 // The problem is going from the last slide to the first slide
 // Eventually, the +1s will exceed the image length, so I need
@@ -42,8 +42,8 @@ function changeDisplay(indexNumberOfCurrent){
 
 // So the last slide scenario is
 
-image[4].classList.toggle("active");
-image[0].classList.toggle("active");
+// image[4].classList.toggle("active");
+// image[0].classList.toggle("active");
 
 // For that to happen, I have to add a check in the form of if condition
 //if condition checks for a specific scenario
@@ -51,31 +51,31 @@ image[0].classList.toggle("active");
 //in this case, if I was on the last slide, I want the index number
 //to be 0.
 
-if (image[i] === image[image.length - 1]){
-  image[i].classList.toggle("active");
-  image[0].classList.toggle("active");
-}
+// if (image[i] === image[image.length - 1]){
+//   image[i].classList.toggle("active");
+//   image[0].classList.toggle("active");
+// }
 
 
 //Updating the changeDisplay function
-function changeDisplay(indexNumberOfCurrent){
-  if (image[indexNumberOfCurrent] === image[image.length - 1]){
-    image[indexNumberOfCurrent].classList.toggle("active");
-    image[0].classList.toggle("active");
-  }
-
-  else {
-    image[indexNumberOfCurrent].classList.toggle("active");
-    image[indexNumberOfCurrent + 1].classList.toggle("active");
-  }
-}
+// function changeDisplay(indexNumberOfCurrent){
+//   if (image[indexNumberOfCurrent] === image[image.length - 1]){
+//     image[indexNumberOfCurrent].classList.toggle("active");
+//     image[0].classList.toggle("active");
+//   }
+//
+//   else {
+//     image[indexNumberOfCurrent].classList.toggle("active");
+//     image[indexNumberOfCurrent + 1].classList.toggle("active");
+//   }
+// }
 
 //now, these codes work
-changeDisplay(0);
-changeDisplay(1);
-changeDisplay(2);
-changeDisplay(3);
-changeDisplay(4);
+// changeDisplay(0);
+// changeDisplay(1);
+// changeDisplay(2);
+// changeDisplay(3);
+// changeDisplay(4);
 
 //I just have to pass the information to change display.
 
@@ -88,11 +88,11 @@ changeDisplay(4);
 // I just have to extract the information
 // image[0], image[1], whichever is currently active
 // I need to get the index numbers
-for (i = 0; i < image.length; i++) {
-  if (image[i].classList.contains("active")) {
-    return i;
-  }
-}
+// for (i = 0; i < image.length; i++) {
+//   if (image[i].classList.contains("active")) {
+//     return i;
+//   }
+// }
 
 //Putting the for loop in a function
 
