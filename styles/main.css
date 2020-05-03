@@ -96,3 +96,43 @@ Script Styles
 .active {
   display: block;
 }
+
+/*--------------------------------------------------------------
+Component Styles - Burger Menu
+--------------------------------------------------------------*/
+/* Header grid positioning */
+.header {
+  display: grid;
+  grid:
+  "menu"
+  "heading"
+  ;
+}
+
+.heading {
+  grid-area: heading;
+}
+
+.nav {
+  grid-area: menu;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+}
+
+/* Burger menu */
+.menu {
+  cursor: pointer;
+  width: 32px;
+}
+
+.jsMenu {
+  display: none;
+}
+
+.active {
+  display: block;
+}
